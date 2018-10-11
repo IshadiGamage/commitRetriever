@@ -1,4 +1,5 @@
 com/pearson/commitRetriever/HttpUtil.class
 com/pearson/commitRetriever/services/CommitRetrieverServiceIntegration.class
 com/pearson/commitRetriever/services/CommitRetrieverService.class
+com/pearson/commitRetriever/constants/Constants.class
 com/pearson/commitRetriever/CommitRetrieverApplication.class

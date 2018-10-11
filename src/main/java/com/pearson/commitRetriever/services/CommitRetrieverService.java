@@ -16,8 +16,8 @@ public class CommitRetrieverService {
     CommitRetrieverServiceIntegration commitRetrieverServiceIntegration;
 
     @PostConstruct
-            public void bla(){
-        commitRetrieverServiceIntegration.test(url);
+    public void RetrieveCommits(){
+        commitRetrieverServiceIntegration.getCommits(url);
     }
 
 }

@@ -8,6 +8,6 @@ public class CommitRetrieverApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CommitRetrieverApplication.class, args);
-		System.out.println("Application is running");
+		System.out.println("===== Application is running =====");
 	}
 }

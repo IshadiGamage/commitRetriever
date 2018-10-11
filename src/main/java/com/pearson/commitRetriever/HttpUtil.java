@@ -7,13 +7,18 @@ import org.springframework.http.MediaType;
 import javax.inject.Inject;
 import java.util.Arrays;
 
+import static com.pearson.commitRetriever.constants.Constants.PWRD;
+import static com.pearson.commitRetriever.constants.Constants.USERNAME;
+
 public class HttpUtil {
 
-    private String token= "UGMAIS";
-    private String pwrd = "Ok@10877@";
+    @Inject
+    CommitRetrieverServiceIntegration commitRetrieverServiceIntegration;
 
-//    @Inject
-//    CommitRetrieverServiceIntegration commitRetrieverServiceIntegration;
+    public String getToken(){
+        String tok = commitRetrieverServiceIntegration.BasicAuth(USERNAME,PWRD);
+        return tok;
+    }
 
 
     public static HttpHeaders getHttpHttpHeaders(){
